@@ -19,7 +19,6 @@ def exec():
             print_base_info(item)
 
 
-
 def print_base_info(course):
     req_courses = requests.get('https://www.coursera.org' + course.find('a')['href'])
     html_courses = req_courses.text
